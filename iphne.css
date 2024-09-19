@@ -1,0 +1,110 @@
+/*
+    for display products
+*/
+/* 
+#iphne{
+    width: 100%;
+    margin-top: 2px;
+}
+
+.main_content{
+    overflow: auto;
+    text-align: center;
+}
+
+.main_content .main {
+    margin-top: 5px;
+    padding: 10px 240px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+}
+
+.main_content .main .product{
+    width: 200px;
+    padding: 30px 20px;
+    color: black;
+    border: 1px solid #cce7d0;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.main_content .main .product:hover{
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+}
+
+.main_content .main .product h4{
+    color: #088178;
+    background-color: #fddde4;
+    border-radius: 4px;
+    padding: 9px 8px 9px 8px;
+    line-height: 1;
+    margin-top: 3px;
+    text-align: center;
+} */
+
+.main_content{
+    overflow: auto;
+    text-align: center;
+}
+
+#iphne{
+    width: 100%;
+    margin-top: 2px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Reduced the gap between products */
+    padding: 20px; /* Optional padding around the grid */
+}
+
+.product {
+    text-align: center;
+    background-color: #f8f8f8; /* You can customize the background color */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    width: 270px;
+    margin-bottom: 20px;
+}
+
+.product img {
+    height: auto;
+    border-radius: 10px;
+}
+
+.product h4 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product p {
+    margin: 5px 0;
+}
+
+.product i {
+    margin: 5px;
+    font-size: 1.1em;
+}
+
+/* Hover effect for the product box */
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for the cart icon */
+.cart {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.cart:hover {
+    color: #ff5722; /* Change to your preferred hover color */
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+

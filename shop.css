@@ -1,0 +1,145 @@
+/*
+    horizontal & vertical nav bar
+    footer acc. to both nav bar
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Horizontal navigation bar*/
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: black;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: rgb(252, 199, 225);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background:rgb(252, 199, 225);
+    position: absolute;
+    bottom: -2px;
+    left: 20px;
+}
+
+/*Vertical navegation bar*/
+
+.wrapper{
+    display: flex;
+    position: relative;
+}
+
+.wrapper .sidebar{
+    position: fixed;
+    background-color: black;
+    width:150px;
+    height: 100%;
+}
+
+.wrapper .sidebar li{
+    list-style: none;
+    padding: 0 20px; 
+    padding: 20px;
+    position: relative;
+}
+
+.wrapper .sidebar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s ease;  
+}
+
+.wrapper .sidebar li a:hover,
+.wrapper .sidebar li a.ver_active{
+    color: rgb(252, 199, 225);
+}
+
+.wrapper .sidebar li a.ver_active::after,
+.wrapper .sidebar li a:hover::after{
+    content: "";
+    width: 20%;
+    height: 2px;
+    background:rgb(252, 199, 225);
+    position: absolute;
+    bottom: 15px;
+    left: 20px;    
+}
+
+.wrapper .main_content{
+    margin-left: 160px;
+    margin-top: 10px;
+}
+
+/*Footer*/
+
+footer{
+    margin-top: 10px;
+    height: auto;
+    border-radius: 2%;
+    background-color: rgb(245, 245, 247);
+    margin-left: 150px;
+    width:fit-content ;
+}
+
+footer p{
+    padding: 20px;
+}
+
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: x-small;
+}
+
+.details .row{
+    font-size: 11px;
+    align-items: center;
+}
+
+.details b{
+    font-size: small;
+}
+
+.last{
+    text-align: center;
+}

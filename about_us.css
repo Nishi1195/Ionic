@@ -1,0 +1,58 @@
+/*
+    about us page 
+*/
+
+.title .knowus{
+    background-image: url("index/about_us_backgroung.jpg");
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title .knowus h1{
+    margin-top: 90px;
+    font-size: 50px;
+}
+
+.title .knowus h4{
+    color: rgb(123, 120, 120);
+}
+
+.title .start{
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.title .start h3{
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.title .start h3 span{
+    color:rgb(16, 232, 113);
+}
+
+.title .content{
+    margin: 60px;
+}
+
+.title .content .info-part{
+    display: flex;
+}
+
+.title .content .info-part img{
+    margin-right: 10px;
+    height: 100%;
+}
+
+.title .content .info-part .instruction{
+    letter-spacing: 3px;
+    word-spacing: 8px;
+    line-height: 25px;
+    margin: 20px;
+}

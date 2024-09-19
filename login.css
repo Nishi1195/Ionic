@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin:13px 150px;
+}
+
+.login .image {
+    width: 50%;
+}
+
+.login .image img {
+    width: 100%;
+    height: 62vh;
+}
+
+.login .info {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+
+.login .info form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login .info form span{
+    text-align: center;
+    font-size: 45px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.login .info form .details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.login .info form .details img{
+    margin-bottom: 10px;
+}
+
+.login .info form .details input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    background-color: #f2f2f2;
+    padding: 5px;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.login .info form .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.login .info form .btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login .info form p {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.login .info form .new {
+    color: black;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
